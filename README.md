@@ -63,6 +63,11 @@ Một hệ thống quản lý sinh viên toàn diện được xây dựng bằn
 - MSSV: `2312401001`
 - Password: `abcxyz`
 
+### Sinh viên 
+- Họ tên: Ngô Thanh Nghiêm
+- MSSV: `0306251194`
+- Password: `thepro456@`
+
 ## 🗃️ Cấu trúc thư mục
 
 ```
@@ -115,4 +120,4 @@ Phần mềm này được phân phối dưới giấy phép MIT.
 Xem file `LICENSE` để biết thêm chi tiết.
 
 ---
-Made with ❤️ by Nhóm PHP cơ bản
+Made with ❤️ by Ngô Thanh Nghiêm

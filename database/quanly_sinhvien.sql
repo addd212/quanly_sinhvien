@@ -1,11 +1,10 @@
--- phpMyAdmin SQL Dump
--- version 5.2.2
--- https://www.phpmyadmin.net/
---
--- Máy chủ: 127.0.0.1:3306
--- Thời gian đã tạo: Th10 05, 2025 lúc 01:02 PM
--- Phiên bản máy phục vụ: 11.8.3-MariaDB-log
--- Phiên bản PHP: 7.2.34
+-- =====================================================================
+-- Đồ án: Hệ thống quản lý sinh viên  |  Database: quanly_sinhvien
+-- Cách chạy: phpMyAdmin -> tab "SQL" -> dán toàn bộ file -> bấm "Thực hiện"
+--   (hoặc tab "Nhập/Import" -> chọn file này)
+-- Lưu ý: file tự tạo database và XÓA/TẠO LẠI các bảng, nên chạy lại được
+--        nhiều lần nhưng dữ liệu đã thêm tay sẽ mất.
+-- =====================================================================
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -16,6 +15,16 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
+
+CREATE DATABASE IF NOT EXISTS `quanly_sinhvien` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `quanly_sinhvien`;
+
+DROP TABLE IF EXISTS `sinh_vien`;
+DROP TABLE IF EXISTS `thong_bao`;
+DROP TABLE IF EXISTS `quan_tri_vien`;
+DROP TABLE IF EXISTS `lop`;
+DROP TABLE IF EXISTS `khoa`;
+
 
 --
 -- Cơ sở dữ liệu: `quanly_sinhvien`
@@ -69,6 +78,7 @@ INSERT INTO `lop` (`malop`, `tenlop`, `makhoa`) VALUES
 ('CNTT23C', 'Công nghệ thông tin 23C', 'CNTT'),
 ('CNTT24A', 'Công nghệ thông tin 24A', 'CNTT'),
 ('CNTT24B', 'Công nghệ thông tin 24B', 'CNTT'),
+('CNTT25C', 'Công nghệ thông tin 25C', 'CNTT'),
 ('DDT23A', 'Điện - Điện tử 23A', 'DDT'),
 ('DDT23B', 'Điện - Điện tử 23B', 'DDT'),
 ('DDT23C', 'Điện - Điện tử 23C', 'DDT'),
@@ -163,6 +173,7 @@ INSERT INTO `sinh_vien` (`mssv`, `hoten`, `ngaysinh`, `gioitinh`, `malop`, `makh
 ('2312403004', 'Lê Thị My', '2005-01-22', 'Nữ', 'DDT24A', 'DDT', '2312403004@ct.edu.vn', '0943456789', 'Đà Nẵng', '$2y$10$TKh8H1.PxfwTtYvEV/0y2O7n4eGcEJ7n2Mn6KZbXAbQW2ShpXQa6K', 'Đang học'),
 ('2312403005', 'Nguyễn Văn Lâm', '2005-11-02', 'Nam', 'DDT24B', 'DDT', '2312403005@ct.edu.vn', '0944567890', 'TP. Hồ Chí Minh', '$2y$10$TKh8H1.PxfwTtYvEV/0y2O7n4eGcEJ7n2Mn6KZbXAbQW2ShpXQa6K', 'Đang học'),
 ('241000011', 'Mai Trần Trường Thịnh', '2025-11-22', 'Nữ', 'CNTT23A', 'CNTT', '', '0912345345', 'htk', '$2y$10$7h15CIZzgNzusZ/wfAMcOOoDZ8zewm9R6uecaiC6kGrcfjRUYptku', 'Đang học'),
+('0306251194', 'Ngô Thanh Nghiêm', '2007-04-24', 'Nam', 'CNTT25C', 'CNTT', '0306251194@caothang.edu.vn', '0823680904', 'TP. Hồ Chí Minh', '$2y$10$0mQGr4ZOXdFwVfc9RdIqW.n4uvdns.Zj9alztKkXBr6z/t1ive8aq', 'Đang học'),
 ('2412401001', 'Phạm Thanh Hải', '2006-05-18', 'Nam', 'CNTT24A', 'CNTT', '2412401001@ct.edu.vn', '0945678901', 'Huế', '$2y$10$TKh8H1.PxfwTtYvEV/0y2O7n4eGcEJ7n2Mn6KZbXAbQW2ShpXQa6K', 'Đang học'),
 ('2412401002', 'Lê Ngọc Ánh', '2006-08-21', 'Nữ', 'CNTT24B', 'CNTT', '2412401002@ct.edu.vn', '0946789012', 'Hà Nội', '$2y$10$TKh8H1.PxfwTtYvEV/0y2O7n4eGcEJ7n2Mn6KZbXAbQW2ShpXQa6K', 'Đang học'),
 ('2412401003', 'Trần Quốc Tuấn', '2006-07-25', 'Nam', 'CNTT24A', 'CNTT', '2412401003@ct.edu.vn', '0947890123', 'Huế', '$2y$10$TKh8H1.PxfwTtYvEV/0y2O7n4eGcEJ7n2Mn6KZbXAbQW2ShpXQa6K', 'Đang học'),
