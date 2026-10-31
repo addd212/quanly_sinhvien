@@ -7,6 +7,6 @@ return [
         'pass' => '',
         'charset' => 'utf8mb4',
     ],
-    'index_url' => 'http://localhost/quanly_sinhvien/',
+    'index_url' => 'http://localhost/0306251194_NgoThanhNghiem/',
 ];
 ?>

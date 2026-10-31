@@ -108,7 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <!-- LIÊN KẾT -->
         <div class="text-center text-sm text-gray-600">
-            <p>Quên mật khẩu? <a href="#" class="text-blue-600 hover:underline">Liên hệ quản trị hệ thống</a></p>
+            <p>Quên mật khẩu? <a href="../login.php" class="text-blue-600 hover:underline">Liên hệ quản trị hệ thống</a></p>
         </div>
 
         <!-- FOOTER -->

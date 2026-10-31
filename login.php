@@ -129,7 +129,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <!-- LIÊN KẾT PHỤ -->
     <div class="text-center text-sm text-gray-600">
-      <p>Bạn quên mật khẩu? <a href="#" class="text-blue-600 hover:underline">Liên hệ quản trị viên</a></p>
+      <p>Bạn quên mật khẩu? <a href="admin/login.php" class="text-blue-600 hover:underline">Liên hệ quản trị viên</a></p>
     </div>
 
     <!-- FOOTER -->
